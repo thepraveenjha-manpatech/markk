@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F6F2EA">
+<title>Markk Shoe Laundry - Shoe Cleaning, Repair and Restoration in Pune</title>
+<meta name="description" content="Markk Shoe Laundry, Vishrantwadi, Pune. Sneaker deep cleaning, leather and suede care, restoration and sole repair, with free pickup and drop across Pune and PCMC. Caring for shoes since 1985.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Markk Shoe Laundry - Pune">
+<meta property="og:description" content="Shoe cleaning, repair and restoration with free pickup and drop across Pune and PCMC. Since 1985.">
+<meta property="og:image" content="./clean.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+
+<style>
+/* Markk Shoe Laundry. A workshop on paper: bone stock, ink type, leather tan.
+   The intake tag is the brand device - every pair that comes in gets one, so
+   it carries the hero, the journey and the section marks. */
+:root{
+  --paper:#F6F2EA; --paper2:#EFE9DD; --card:#FFFDF8;
+  --ink:#141110; --ink2:#4A4139; --mute:#847868;
+  --tan:#A4613A; --tan-lt:#C9834F;
+  --green:#1F4D3D;
+  --line:rgba(20,17,16,.13);
+  --display:'Fraunces',Georgia,serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  --tag:'Space Mono','Courier New',monospace;
+  --pad:clamp(72px,8vw,136px);
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--tan);color:#fff}
+
+.wrap{width:min(1240px,100% - clamp(22px,5vw,76px));margin-inline:auto}
+.band{padding-block:var(--pad)}
+.eyebrow{font-family:var(--tag);font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--tan)}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:1.02;
+  letter-spacing:-.015em}
+h1{font-size:clamp(40px,6.2vw,86px)}
+.h-sec{font-size:clamp(32px,4.4vw,62px)}
+.lede{color:var(--ink2);font-size:clamp(16.5px,1.5vw,19.5px);max-width:56ch}
+.muted{color:var(--mute)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;
+  font-size:15.5px;text-decoration:none;border:1px solid transparent;
+  transition:transform .2s,background .2s,border-color .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ghost{border-color:var(--line);background:transparent;color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-wa{background:var(--green);color:#fff}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(246,242,234,.86);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;min-height:74px}
+.mark{font-family:var(--display);font-weight:900;font-size:25px;letter-spacing:-.02em;
+  text-decoration:none;display:flex;align-items:baseline;gap:9px}
+.mark s{text-decoration:none;font-family:var(--tag);font-size:9.5px;letter-spacing:.2em;
+  color:var(--mute);text-transform:uppercase}
+nav ul{list-style:none;display:flex;gap:28px;margin-left:auto}
+nav a.lnk{text-decoration:none;font-size:15px;color:var(--ink2);font-weight:500}
+nav a.lnk:hover{color:var(--tan)}
+nav .btn{margin-left:auto;min-height:44px;padding:0 19px;font-size:14.5px}
+nav ul + .btn{margin-left:0}
+
+/* ---------- the tag device ---------- */
+.tagcard{position:relative;background:var(--card);border:1px solid var(--line);
+  border-radius:4px 14px 14px 4px;padding:18px 22px 18px 34px;
+  box-shadow:0 18px 44px -28px rgba(20,17,16,.6);min-width:188px}
+.tagcard::before{content:"";position:absolute;left:13px;top:50%;width:11px;height:11px;
+  margin-top:-5.5px;border-radius:50%;background:var(--paper2);
+  box-shadow:inset 0 0 0 1px var(--line)}
+.tagcard::after{content:"";position:absolute;left:0;top:10px;bottom:10px;width:3px;
+  background:repeating-linear-gradient(180deg,var(--tan) 0 6px,transparent 6px 12px);
+  opacity:.5}
+.tagcard b{display:block;font-family:var(--tag);font-size:10px;letter-spacing:.2em;
+  color:var(--mute);text-transform:uppercase}
+.tagcard i{display:block;font-family:var(--tag);font-style:normal;font-size:19px;
+  font-weight:700;letter-spacing:.04em;margin-top:3px}
+
+/* ---------- hero ---------- */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);
+  gap:clamp(32px,5vw,78px);align-items:center;padding-block:clamp(34px,5vw,72px) var(--pad)}
+.hero h1{margin:16px 0 22px}
+.hero h1 em{font-style:normal;color:var(--tan);display:block}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.trust{list-style:none;display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:34px}
+.trust li{font-family:var(--tag);font-size:11px;letter-spacing:.14em;color:var(--mute);
+  text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.trust li::before{content:"";width:6px;height:6px;background:var(--tan);
+  transform:rotate(45deg);flex:none}
+
+.shotwrap{position:relative}
+.shotwrap figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);
+  background:var(--paper2);box-shadow:0 50px 90px -60px rgba(20,17,16,.85)}
+.shotwrap figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.hangtag{position:absolute;right:-14px;bottom:34px;transform-origin:14px 14px;
+  will-change:transform;z-index:3}
+.hangtag .str{position:absolute;left:18px;top:-30px;width:1px;height:32px;
+  background:var(--mute);opacity:.55}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--ink);color:var(--paper);overflow:hidden;padding-block:17px}
+.tick-row{display:flex;gap:40px;width:max-content;animation:slide 34s linear infinite}
+.tick-row span{font-family:var(--tag);font-size:12px;letter-spacing:.2em;
+  text-transform:uppercase;white-space:nowrap}
+.tick-row span:nth-child(4n+3){color:var(--tan-lt)}
+.tick-row i{width:6px;height:6px;background:var(--tan);transform:rotate(45deg);
+  align-self:center;flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- journey ---------- */
+.flow{background:var(--paper2);border-block:1px solid var(--line)}
+.flow .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,430px);
+  gap:clamp(30px,5vw,72px);align-items:center}
+.stepno{font-family:var(--tag);font-size:11px;letter-spacing:.2em;color:var(--tan);
+  margin-top:30px}
+.stephead{font-family:var(--display);font-size:clamp(30px,3.6vw,50px);line-height:1.04;
+  margin:8px 0 10px}
+.stepbody{color:var(--ink2);min-height:78px;max-width:46ch}
+.track{margin-top:30px;touch-action:pan-y;cursor:grab;user-select:none;padding:16px 0 2px}
+.track:active{cursor:grabbing}
+.track.scrubbing{touch-action:none}
+.track .line{position:relative;height:3px;border-radius:99px;background:rgba(20,17,16,.14)}
+.track .line>b{position:absolute;inset:0 auto 0 0;width:0%;border-radius:99px;
+  background:var(--tan);transition:width .28s cubic-bezier(.2,.8,.2,1)}
+.knob{position:absolute;top:50%;left:0;width:40px;height:40px;border-radius:50%;
+  transform:translate(-50%,-50%);background:var(--ink);
+  box-shadow:0 10px 26px -10px rgba(20,17,16,.8);display:grid;place-items:center;
+  transition:left .28s cubic-bezier(.2,.8,.2,1)}
+.knob::before,.knob::after{content:"";position:absolute;width:0;height:0;
+  border-top:4px solid transparent;border-bottom:4px solid transparent}
+.knob::before{border-right:6px solid var(--paper);left:9px}
+.knob::after{border-left:6px solid var(--paper);right:9px}
+.dots{display:flex;justify-content:space-between;margin-top:18px;list-style:none}
+.dots li{font-family:var(--tag);font-size:9.5px;letter-spacing:.16em;color:var(--mute);
+  text-transform:uppercase;cursor:pointer;background:none;border:0;
+  transition:color .22s;text-align:center}
+.dots li:first-child{text-align:left}
+.dots li:last-child{text-align:right}
+.dots li.on{color:var(--ink);font-weight:700}
+.flowshot{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);
+  background:var(--paper);box-shadow:0 50px 90px -60px rgba(20,17,16,.85)}
+.flowshot img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;
+  transition:opacity .4s,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.flowshot img.fade{opacity:0}
+.flowshot .tagmini{position:absolute;left:16px;top:16px;font-family:var(--tag);
+  font-size:10px;letter-spacing:.18em;background:rgba(255,253,248,.92);
+  padding:8px 13px;border-radius:999px;border:1px solid var(--line)}
+
+/* ---------- services ---------- */
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(14px,1.8vw,22px);margin-top:clamp(36px,5vw,58px)}
+.svc article{background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:30px 28px 34px;display:flex;flex-direction:column;gap:10px;
+  transition:transform .25s,box-shadow .25s}
+.svc article:hover{transform:translateY(-4px);
+  box-shadow:0 28px 50px -38px rgba(20,17,16,.7)}
+.svc .n{font-family:var(--tag);font-size:10px;letter-spacing:.22em;color:var(--tan)}
+.svc h3{font-size:clamp(21px,2.1vw,26px)}
+.svc p{color:var(--ink2);font-size:15.5px}
+.mats{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px;list-style:none}
+.mats li{font-family:var(--tag);font-size:10px;letter-spacing:.16em;color:var(--ink2);
+  border:1px solid var(--line);border-radius:999px;padding:9px 15px;
+  text-transform:uppercase;background:var(--card)}
+
+/* ---------- story ---------- */
+.story{background:var(--ink);color:var(--paper)}
+.story .wrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);
+  gap:clamp(30px,5vw,76px);align-items:center}
+.story figure{margin:0;border-radius:20px;overflow:hidden}
+.story figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.story .eyebrow{color:var(--tan-lt)}
+.story .big{font-family:var(--display);font-size:clamp(54px,8vw,120px);line-height:.88;
+  color:var(--tan-lt);margin:14px 0 4px}
+.story p{color:#D9D0C4;max-width:54ch}
+.story p + p{margin-top:16px}
+.sister{margin-top:34px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  border-top:1px solid rgba(246,242,234,.16);padding-top:26px}
+.sister b{font-family:var(--tag);font-size:10px;letter-spacing:.2em;color:#9A8F80;
+  text-transform:uppercase}
+
+/* ---------- visit ---------- */
+.visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(28px,5vw,74px)}
+.addr{font-style:normal;font-size:17.5px;color:var(--ink2);margin-top:24px;
+  line-height:1.75}
+.addr strong{color:var(--ink)}
+.rows{margin-top:30px}
+.row{display:grid;grid-template-columns:minmax(92px,26%) 1fr;gap:16px;padding:16px 0;
+  border-top:1px solid var(--line)}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row dt{font-family:var(--tag);font-size:10px;letter-spacing:.18em;color:var(--mute);
+  text-transform:uppercase;padding-top:4px}
+.row dd{font-size:16.5px}
+.row dd a{color:var(--green);font-weight:700}
+
+/* ---------- footer ---------- */
+footer{background:var(--paper2);border-top:1px solid var(--line);
+  padding-block:44px 54px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center}
+footer .fine{font-size:14px;color:var(--mute);margin-left:auto;text-align:right}
+
+/* sticky mobile bar */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:45;align-items:center;
+  gap:13px;background:rgba(255,253,248,.96);backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+  padding:11px max(15px,env(safe-area-inset-left,0px))
+          calc(11px + env(safe-area-inset-bottom,0px)) max(15px,env(safe-area-inset-right,0px));
+  transform:translateY(130%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar div{flex:1;min-width:0;line-height:1.25}
+.mbar b{display:block;font-size:14px}
+.mbar span{font-size:12.5px;color:var(--mute)}
+.mbar .btn{min-height:46px;padding:0 19px;font-size:14px}
+
+.rev{opacity:0;transform:translateY(22px);
+  transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.rev.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-block:14px 56px;gap:34px}
+  .hero .copy{order:2}
+  .shotwrap{order:1}
+  .shotwrap figure img{aspect-ratio:4/3}
+  .hangtag{right:8px;bottom:-18px}
+  .flow .wrap,.visit .wrap,.story .wrap{grid-template-columns:1fr}
+  .flowside{display:contents}
+  .flowintro{order:1}
+  .flow .flowshot{order:2;width:min(100%,calc(33vh * 0.8));margin-inline:auto}
+  .flow .flowctrl{order:3}
+  .flow .wrap{gap:20px}
+  .flowintro .lede{display:none}
+  .stepno{margin-top:0}
+  .stephead{font-size:clamp(26px,7.4vw,38px);margin:6px 0 6px}
+  .stepbody{min-height:0;font-size:15.5px}
+  .track{margin-top:16px;padding-top:12px;padding-inline:19px;
+    margin-inline:-19px}
+  .dots{margin-top:26px}
+  .mark{font-size:21px}
+  nav .btn{min-height:40px;padding:0 15px;font-size:13.5px}
+  .story figure{order:2}
+  .svc{grid-template-columns:1fr}
+  .mbar{display:flex}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .hero .cta-row .btn{flex:1 1 100%}
+  footer .fine{margin-left:0;text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+  .rev{opacity:1;transform:none}
+}
+</style>
+
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top">Markk <s>Shoe Laundry</s></a>
+    <ul>
+      <li><a class="lnk" href="#services">Services</a></li>
+      <li><a class="lnk" href="#flow">How it works</a></li>
+      <li><a class="lnk" href="#story">Story</a></li>
+      <li><a class="lnk" href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-wa" id="navWa" href="#visit">Book a pickup</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Vishrantwadi, Pune / Since 1985</p>
+      <h1>Hand them over dirty.<em>Get them back new.</em></h1>
+      <p class="lede">Markk is a shoe laundry and repair workshop. Sneakers, leather,
+        suede, boots and bags come in tired and go out cleaned, repaired and
+        finished by hand. We pick up from your door and drop them back.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="#visit">Book a free pickup</a>
+        <a class="btn btn-ghost" href="#flow">See how it works</a>
+      </div>
+      <ul class="trust">
+        <li>Free pickup and drop</li>
+        <li>Pune and PCMC</li>
+        <li>Clean, repair, restore</li>
+      </ul>
+    </div>
+
+    <div class="shotwrap">
+      <figure><img src="./clean.jpg" width="880" height="1086"
+        alt="A sneaker being cleaned by hand with foam and a soft brush" fetchpriority="high"></figure>
+      <div class="hangtag" id="hangtag">
+        <span class="str"></span>
+        <div class="tagcard">
+          <b>Intake</b>
+          <i>MK-1985</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="tick-row" id="tickRow"></div>
+</div>
+
+<!-- ------------------------------------------------ how it works -->
+<section class="flow band" id="flow">
+  <div class="wrap">
+    <div class="flowside">
+      <div class="flowintro">
+        <p class="eyebrow">How it works</p>
+        <h2 class="h-sec">Follow a pair through the workshop</h2>
+        <p class="lede" style="margin-top:18px">Every pair that comes in gets a tag and
+          a route. Drag the handle to walk through it.</p>
+      </div>
+      <div class="flowctrl">
+        <p class="stepno" id="stepNo">Stage 01 of 05</p>
+        <p class="stephead" id="stepHead">Pickup</p>
+        <p class="stepbody" id="stepBody">Message us on WhatsApp and we collect from your
+          door anywhere in Pune or PCMC. Pickup and drop are free.</p>
+
+        <div class="track" id="track" role="slider" tabindex="0"
+             aria-label="Workshop stage" aria-valuemin="1" aria-valuemax="5"
+             aria-valuenow="1" aria-valuetext="Pickup">
+          <div class="line"><b id="fill"></b><span class="knob" id="knob"></span></div>
+        </div>
+        <ul class="dots" id="dots"></ul>
+      </div>
+    </div>
+
+    <div class="flowshot">
+      <span class="tagmini" id="tagMini">MK-1985</span>
+      <img id="flowImg" src="./wear.jpg" width="620" height="1403"
+           alt="A freshly cleaned pair being laced up">
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------ services -->
+<section class="band" id="services">
+  <div class="wrap">
+    <p class="eyebrow rev">What we do</p>
+    <h2 class="h-sec rev" style="margin-top:12px">Six benches, one counter</h2>
+    <p class="lede rev" style="margin-top:18px">Shoes, bags and luggage. If it is made of
+      leather, suede, canvas or knit and it has seen a Pune monsoon, it can be brought
+      back.</p>
+
+    <div class="svc">
+      <article class="rev"><span class="n">01</span><h3>Sneaker deep clean</h3>
+        <p>Uppers, midsoles, outsoles and laces washed separately, by hand, with
+          material-safe cleaners. Yellowed midsoles brought back where possible.</p></article>
+      <article class="rev"><span class="n">02</span><h3>Leather and suede care</h3>
+        <p>Dry cleaning for suede and nubuck, conditioning and polish for leather,
+          so the grain stays soft instead of cracking.</p></article>
+      <article class="rev"><span class="n">03</span><h3>Restoration</h3>
+        <p>Colour touch-up, edge and sole paint, scuff work and refinishing for shoes
+          that are worn down rather than only dirty.</p></article>
+      <article class="rev"><span class="n">04</span><h3>Sole, heel and stitch repair</h3>
+        <p>Sole and heel replacement, re-stitching, loose panels and separated soles
+          bonded back at the repair bench.</p></article>
+      <article class="rev"><span class="n">05</span><h3>Bags and luggage</h3>
+        <p>Handbags, backpacks, office bags and trolleys cleaned and conditioned with
+          the same material-by-material approach.</p></article>
+      <article class="rev"><span class="n">06</span><h3>Protective finish</h3>
+        <p>A water and stain repellent finish applied at the end, so the next spill
+          sits on the surface instead of soaking in.</p></article>
+    </div>
+
+    <ul class="mats rev">
+      <li>Leather</li><li>Suede</li><li>Nubuck</li><li>Canvas</li><li>Mesh</li>
+      <li>Knit</li><li>Patent</li><li>Synthetic</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ------------------------------------------------ story -->
+<section class="story band" id="story">
+  <div class="wrap">
+    <figure><img src="./intake.jpg" width="900" height="1125"
+      alt="A mud-covered sneaker on the workshop bench beside a brush" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">The workshop</p>
+      <p class="big">1985</p>
+      <h2 class="h-sec" style="margin-bottom:20px">We have been fixing shoes
+        longer than most sneaker brands have existed.</h2>
+      <p>Markk started as a repair bench in Pune in 1985, back when a worn pair was
+        mended rather than replaced. Soles were stitched, heels were rebuilt, leather
+        was fed and polished until it looked like it had never been out in the rain.</p>
+      <p>What changed is the footwear, not the craft. Knit uppers, foam midsoles,
+        suede panels and glued constructions all need their own treatment, so the
+        bench grew into a laundry with a bench still in it. The same hands that
+        repaired shoes forty years ago now clean, restore and protect them.</p>
+      <div class="sister">
+        <b>A KAYROA venture</b>
+        <span class="muted" style="color:#9A8F80;font-size:15px">Also from KAYROA:
+          Spazzu instant shoe cleaning foam, for the weeks between visits.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------ visit -->
+<section class="band" id="visit">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Visit or book</p>
+      <h2 class="h-sec" style="margin-top:12px">Drop them at the shop, or stay home.</h2>
+      <p class="lede" style="margin-top:18px">Free pickup and drop runs across Pune and
+        PCMC. Send a message with what you have and where you are, and we will arrange
+        a collection.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" id="waBtn" href="#">Message on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+919975191459">Call the shop</a>
+      </div>
+    </div>
+
+    <div>
+      <address class="addr">
+        <strong>Markk Shoe Laundry</strong><br>
+        Shop No 102, Jai Ganesh Vishwa,<br>
+        Kasturba Housing Society, Vishrantwadi,<br>
+        Pune, Maharashtra 411015
+      </address>
+      <dl class="rows">
+        <div class="row"><dt>Phone</dt>
+          <dd><a href="tel:+919975191459">+91 99751 91459</a></dd></div>
+        <div class="row"><dt>Service area</dt>
+          <dd>Pune and PCMC, free pickup and drop</dd></div>
+        <div class="row"><dt>We handle</dt>
+          <dd>Shoes, sneakers, boots, sandals, bags and luggage</dd></div>
+        <div class="row"><dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/markkshoelaundry/" target="_blank"
+                 rel="noopener">@markkshoelaundry</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top">Markk <s>Shoe Laundry</s></a>
+    <p class="fine">Shop No 102, Jai Ganesh Vishwa, Vishrantwadi, Pune 411015<br>
+      A KAYROA venture</p>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <div><b>Free pickup and drop</b><span>Pune and PCMC</span></div>
+  <a class="btn btn-wa" id="waBar" href="#">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+'use strict';
+var WA = '919975191459';
+var waText = encodeURIComponent(
+  'Hi Markk Shoe Laundry! I would like to book a pickup. ' +
+  'Here is what I have: ');
+var waUrl = 'https://wa.me/' + WA + '?text=' + waText;
+['waBtn','waBar','navWa'].forEach(function(id){
+  var el = document.getElementById(id);
+  if (el) { el.href = waUrl; el.target = '_blank'; el.rel = 'noopener'; }
+});
+
+/* ---------- ticker ---------- */
+var WORDS = ['Sneaker deep clean','Leather and suede care','Restoration',
+             'Sole and stitch repair','Bags and luggage','Protective finish',
+             'Free pickup and drop'];
+var row = document.getElementById('tickRow'), html = '';
+for (var k = 0; k < 2; k++)
+  for (var w = 0; w < WORDS.length; w++)
+    html += '<span>' + WORDS[w] + '</span><i></i>';
+row.innerHTML = html;
+
+/* ---------- the hanging tag ---------- */
+var tag = document.getElementById('hangtag');
+var ang = 0, vel = 0, target = 0, raf = null;
+function swing(){
+  var k = 0.012, damp = 0.94;
+  vel += (target - ang) * k; vel *= damp; ang += vel;
+  tag.style.transform = 'rotate(' + ang.toFixed(3) + 'deg)';
+  if (Math.abs(vel) > 0.004 || Math.abs(target - ang) > 0.05) raf = requestAnimationFrame(swing);
+  else { raf = null; tag.style.transform = 'rotate(' + target + 'deg)'; }
+}
+function nudge(to){ target = to; if (!raf) raf = requestAnimationFrame(swing); }
+addEventListener('scroll', function(){
+  nudge(Math.max(-7, Math.min(7, (scrollY - (tag.lastY||0)) * -0.5)));
+  tag.lastY = scrollY;
+}, {passive:true});
+tag.addEventListener('pointerenter', function(){ nudge(-6); });
+tag.addEventListener('pointerleave', function(){ nudge(0); });
+setTimeout(function(){ nudge(-5); setTimeout(function(){ nudge(0); }, 500); }, 900);
+
+/* ---------- workshop journey ---------- */
+var STAGES = [
+  {k:'Pickup', short:'Pickup', img:'./wear.jpg', pos:'50% 50%', tag:'Collected',
+   t:'Message us on WhatsApp and we collect from your door anywhere in Pune or PCMC. ' +
+     'Pickup and drop are free.'},
+  {k:'Intake and inspection', short:'Intake', img:'./intake.jpg', pos:'50% 50%', tag:'Tagged',
+   t:'Each pair is checked for material, damage and loose stitching, then tagged so it ' +
+     'travels through the workshop as a pair and comes back as one.'},
+  {k:'Deep clean', short:'Clean', img:'./clean.jpg', pos:'50% 50%', tag:'In the wash',
+   t:'Uppers, midsoles, outsoles and laces are washed separately by hand, using cleaners ' +
+     'chosen for the material rather than one bottle for everything.'},
+  {k:'Repair and restore', short:'Repair', img:'./intake.jpg', pos:'72% 72%', tag:'At the bench',
+   t:'Soles, heels and stitching are repaired at the bench. Scuffed edges and faded ' +
+     'colour are touched up so the shoe reads as cared for, not patched.'},
+  {k:'Protect and return', short:'Return', img:'./done.jpg', pos:'50% 50%', tag:'Ready',
+   t:'A water and stain repellent finish goes on last, then the pair is boxed and ' +
+     'dropped back at your door.'}
+];
+var track = document.getElementById('track'),
+    fill  = document.getElementById('fill'),
+    knob  = document.getElementById('knob'),
+    dots  = document.getElementById('dots'),
+    img   = document.getElementById('flowImg'),
+    mini  = document.getElementById('tagMini'),
+    hNo   = document.getElementById('stepNo'),
+    hHd   = document.getElementById('stepHead'),
+    hBd   = document.getElementById('stepBody'),
+    cur   = -1;
+
+STAGES.forEach(function(s, i){
+  var li = document.createElement('li');
+  li.textContent = s.short;
+  li.setAttribute('role','button'); li.tabIndex = -1;
+  li.addEventListener('click', function(){ go(i); });
+  dots.appendChild(li);
+});
+
+function go(i){
+  i = Math.max(0, Math.min(STAGES.length - 1, i));
+  if (i === cur) return;
+  cur = i;
+  var s = STAGES[i], p = i / (STAGES.length - 1);
+  fill.style.width = (p * 100) + '%';
+  knob.style.left  = (p * 100) + '%';
+  hNo.textContent  = 'Stage ' + String(i + 1).padStart(2,'0') +
+                     ' of ' + String(STAGES.length).padStart(2,'0');
+  hHd.textContent  = s.k;
+  hBd.textContent  = s.t;
+  mini.textContent = s.tag;
+  if (img.getAttribute('src') !== s.img || img.style.objectPosition !== s.pos){
+    img.classList.add('fade');
+    setTimeout(function(){
+      img.src = s.img; img.style.objectPosition = s.pos;
+      img.classList.remove('fade');
+    }, 190);
+  }
+  for (var d = 0; d < dots.children.length; d++)
+    dots.children[d].classList.toggle('on', d === i);
+  track.setAttribute('aria-valuenow', i + 1);
+  track.setAttribute('aria-valuetext', s.k);
+}
+
+function stageFrom(e){
+  var r = track.querySelector('.line').getBoundingClientRect();
+  return Math.round(((e.clientX - r.left) / r.width) * (STAGES.length - 1));
+}
+/* A vertical swipe must scroll the page; only a sideways drag moves the stage. */
+var active = false, armed = false, sx = 0, sy = 0, pid = null;
+function end(){ active = false; armed = false; track.classList.remove('scrubbing'); }
+track.addEventListener('pointerdown', function(e){
+  pid = e.pointerId; sx = e.clientX; sy = e.clientY;
+  if (e.pointerType === 'touch'){ armed = true; return; }
+  active = true;
+  try { track.setPointerCapture(pid); } catch(err){}
+  go(stageFrom(e)); e.preventDefault();
+});
+track.addEventListener('pointermove', function(e){
+  if (armed && !active){
+    var dx = Math.abs(e.clientX - sx), dy = Math.abs(e.clientY - sy);
+    if (dy > 9 && dy >= dx) { armed = false; return; }
+    if (dx < 9 || dx <= dy) return;
+    active = true; armed = false; track.classList.add('scrubbing');
+    try { track.setPointerCapture(pid); } catch(err){}
+  }
+  if (!active) return;
+  go(stageFrom(e));
+  if (e.cancelable) e.preventDefault();
+});
+track.addEventListener('pointerup', end);
+track.addEventListener('pointercancel', end);
+track.addEventListener('lostpointercapture', end);
+track.addEventListener('keydown', function(e){
+  var d = 0;
+  if (e.key === 'ArrowRight' || e.key === 'ArrowUp') d = 1;
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowDown') d = -1;
+  if (e.key === 'Home'){ go(0); e.preventDefault(); return; }
+  if (e.key === 'End'){ go(STAGES.length - 1); e.preventDefault(); return; }
+  if (d){ go(cur + d); e.preventDefault(); }
+});
+go(0);
+
+/* ---------- reveals + sticky bar ---------- */
+var io = new IntersectionObserver(function(en){
+  en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('in');
+    io.unobserve(x.target); } });
+}, {rootMargin:'0px 0px -8% 0px'});
+Array.prototype.forEach.call(document.querySelectorAll('.rev'), function(el, i){
+  el.style.transitionDelay = (Math.min(i, 5) * 55) + 'ms'; io.observe(el);
+});
+
+var bar = document.getElementById('mbar'), hero = document.getElementById('top');
+new IntersectionObserver(function(en){
+  bar.classList.toggle('show', !en[0].isIntersecting);
+}, {threshold:0}).observe(hero);
+})();
+</script>
